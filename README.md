@@ -3,7 +3,7 @@
 ### Project Title
 Bikeshare Data Analysis
 ### Description
-This python program can be run via any console to analyse the given bikeshare data from three different cities.
+The python program bikeshare.py can be run via any console to analyse the given bikeshare data from three different cities.
 It interacts with the user to specify filters and display different information-
 ### Files used
 bikeshare.py
@@ -11,4 +11,4 @@ chicago.csv
 new_york_city.csv
 washington.csv
 ### Credits
-Udacity 
+Udacity
