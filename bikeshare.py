@@ -20,7 +20,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
         city = input('Would you like to see data for Chicago, New York City, or Washington?\n').lower()#.replace(' ', '_')
@@ -30,7 +30,7 @@ def get_filters():
         else:
             break
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june)
     #('Would you like to filter the data by month, day, both or not at all?')
     while True:
         month = input('Name the month you wanna filter by or enter all to apply no filter by month: ').lower()
@@ -98,19 +98,19 @@ def time_stats(df):
     df['Start Time']= pd.to_datetime(df['Start Time'])
 
 
-    # TO DO: display the most common month
+    # display the most common month
     df['month'] = df['Start Time'].dt.month
     popular_month = df['month'].mode()[0]
     print('The most common month: ', popular_month)
 
 
-    # TO DO: display the most common day of week
+    # display the most common day of week
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     popular_day = df['day_of_week'].mode()[0]
     print('The most common day of the week: ', popular_day)
 
 
-    # TO DO: display the most common start hour
+    # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     popular_hour = df['hour'].mode()[0]
     print('The most common start hour: ', popular_hour)
